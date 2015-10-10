@@ -1,0 +1,31 @@
+# This file exists so you can easily regenerate your project.
+#
+# Unfortunatelly cookiecutter can't use this right away so
+# you have to copy this file to ~/.cookiecutterrc
+
+default_context:
+
+    c_extension_optional:      'no'
+    c_extension_support:       'no'
+    codacy:                    'no'
+    codeclimate:               'no'
+    codecov:                   'yes'
+    command_line_interface:    'click'
+    coveralls:                 'no'
+    distribution_name:         'picard_wrap'
+    email:                     'gus.dunn@yale.edu'
+    full_name:                 'Gus Dunn'
+    github_username:           'xguse'
+    landscape:                 'no'
+    package_name:              'picard_wrap'
+    project_name:              'picard wrap'
+    project_short_description: 'Small python script to wrap picard-tools. Its meant to installed via conda.'
+    release_date:              '2015-10-10'
+    repo_name:                 'picard-wrap'
+    scrutinizer:               'no'
+    sphinx_theme:              'readthedocs'
+    test_matrix_configurator:  'no'
+    test_runner:               'pytest'
+    version:                   '0.0.1'
+    website:                   'https://github.com/xguse/picard-wrap'
+    year:                      '2015'

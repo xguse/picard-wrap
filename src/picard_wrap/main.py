@@ -109,6 +109,14 @@ def echo_picard_help(ctx):
                 picard_arg_str='')
 
 
+def get_picard_path(path=None):
+    if path is None:
+        picard_path = "{conda_env}/picard/picard.jar".format(conda_env=os.environ['CONDA_ENV_PATH'])
+        return picard_path
+    else:
+        return path
+
+
 @click.group()
 @click.option('--use-path', type=click.Path(exists=True),
               default=None,
@@ -123,14 +131,10 @@ def cli(ctx, use_path):
 
     """
 
-    try:
-        if use_path is None:
-            picard_path = "{conda_env}/picard/picard.jar".format(conda_env=os.environ['CONDA_ENV_PATH'])
-            ctx.obj['PICARD'] = picard_path
-        else:
-            ctx.obj['PICARD'] = use_path
-    except KeyError:
-        raise
+    ctx.obj = {}
+
+    ctx.obj["PICARD"] = get_picard_path(path=use_path)
+    ctx.obj["CONDA_ENV_PATH"] = os.environ["CONDA_ENV_PATH"]
 
 
 @cli.command(short_help='runs picard', add_help_option=False)
@@ -178,6 +182,5 @@ def help_(ctx):
     echo_picard_help(ctx)
 
 
-if __name__ == '__main__':
-    cli(obj={})
+
 

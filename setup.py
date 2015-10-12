@@ -24,7 +24,7 @@ def read(*names, **kwargs):
 
 setup(
     name='picard_wrap',
-    version='0.0.1',
+    version='0.0.1rc3',
     license='BSD',
     description='Small python script to wrap picard-tools. Its meant to installed via conda.',
     long_description='%s\n%s' % (read('README.rst'), re.sub(':[a-z]+:`~?(.*?)`', r'``\1``', read('CHANGELOG.rst'))),
@@ -67,7 +67,7 @@ setup(
     },
     entry_points={
         'console_scripts': [
-            'picard = picard_wrap.__main__:cli',
+            'picard = picard_wrap.main:cli',
         ]
     },
 )

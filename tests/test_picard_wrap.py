@@ -1,7 +1,7 @@
 
 from click.testing import CliRunner
 
-from picard_wrap.__main__ import main
+from picard_wrap.main import main
 
 
 def test_main():

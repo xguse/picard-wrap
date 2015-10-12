@@ -67,7 +67,7 @@ setup(
     },
     entry_points={
         'console_scripts': [
-            'picard_wrap = picard_wrap.__main__:main',
+            'picard = picard_wrap.__main__:cli',
         ]
     },
 )

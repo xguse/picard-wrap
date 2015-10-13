@@ -58,6 +58,7 @@ setup(
     ],
     install_requires=[
         'click',
+        'pytest'
     ],
     extras_require={
         # eg:

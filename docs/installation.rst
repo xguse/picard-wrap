@@ -5,11 +5,12 @@ Installation
 Via pip
 -------
 
-From the PyPI::
+.. danger::
+    There is a ``PyCard`` on PyPI but that is **NOT** this package!
 
-    pip install pycard
+    Do **NOT** simply ``pip install pycard`` or you will end up with that address card program!
 
-or from github::
+From github::
 
     pip install -e git://github.com/xguse/pycard.git@v0.0.1#egg=pycard
 

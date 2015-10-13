@@ -10,7 +10,7 @@ To use pycard in a from the command line::
       This script facilitates calling `/path/to/picard.jar`.
 
       Its purpose is to allow you to call picard without providing or even
-      knowing the pull path to the executable far file.
+      knowing the full path to the executable far file.
 
     Options:
       --use-path PATH  Provide a path to override the default picard.jar location.

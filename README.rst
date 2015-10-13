@@ -10,8 +10,6 @@ pycard
     * - tests
       - | |travis| |appveyor|
         | |codecov|
-    * - package
-      - |version| |downloads|
 
 .. |docs| image:: https://readthedocs.org/projects/pycard/badge/?style=flat
     :target: https://readthedocs.org/projects/pycard

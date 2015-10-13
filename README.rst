@@ -33,11 +33,11 @@ pycard
 
 
 
-.. |version| image:: https://img.shields.io/pypi/v/picard_wrap.svg?style=flat
+.. |version| image:: https://img.shields.io/pypi/v/pycard.svg?style=flat
     :alt: PyPI Package latest release
     :target: https://pypi.python.org/pypi/pycard
 
-.. |downloads| image:: https://img.shields.io/pypi/dm/picard_wrap.svg?style=flat
+.. |downloads| image:: https://img.shields.io/pypi/dm/pycard.svg?style=flat
     :alt: PyPI Package monthly downloads
     :target: https://pypi.python.org/pypi/pycard
 

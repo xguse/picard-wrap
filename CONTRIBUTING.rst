@@ -8,7 +8,7 @@ little bit helps, and credit will always be given.
 Bug reports
 ===========
 
-When `reporting a bug <https://github.com/xguse/picard-wrap/issues>`_ please include:
+When `reporting a bug <https://github.com/xguse/pycard/issues>`_ please include:
 
     * Your operating system name and version.
     * Any details about your local setup that might be helpful in troubleshooting.
@@ -24,7 +24,7 @@ articles, and such.
 Feature requests and feedback
 =============================
 
-The best way to send feedback is to file an issue at https://github.com/xguse/picard-wrap/issues.
+The best way to send feedback is to file an issue at https://github.com/xguse/pycard/issues.
 
 If you are proposing a feature:
 
@@ -35,12 +35,12 @@ If you are proposing a feature:
 Development
 ===========
 
-To set up `picard-wrap` for local development:
+To set up `pycard` for local development:
 
-1. `Fork picard-wrap on GitHub <https://github.com/xguse/picard-wrap/fork>`_.
+1. `Fork pycard on GitHub <https://github.com/xguse/pycard/fork>`_.
 2. Clone your fork locally::
 
-    git clone git@github.com:your_name_here/picard-wrap.git
+    git clone git@github.com:your_name_here/pycard.git
 
 3. Create a branch for local development::
 
@@ -68,15 +68,15 @@ If you need some code review or feedback while you're developing the code just m
 For merging, you should:
 
 1. Include passing tests (run ``tox``) [1]_.
-2. Update documentation when there's new API, functionality etc. 
+2. Update documentation when there's new API, functionality etc.
 3. Add a note to ``CHANGELOG.rst`` about the changes.
 4. Add yourself to ``AUTHORS.rst``.
 
-.. [1] If you don't have all the necessary python versions available locally you can rely on Travis - it will 
-       `run the tests <https://travis-ci.org/xguse/picard-wrap/pull_requests>`_ for each change you add in the pull request.
-       
+.. [1] If you don't have all the necessary python versions available locally you can rely on Travis - it will
+       `run the tests <https://travis-ci.org/xguse/pycard/pull_requests>`_ for each change you add in the pull request.
+
        It will be slower though ...
-       
+
 Tips
 ----
 

@@ -15,6 +15,7 @@ from os.path import splitext
 from setuptools import find_packages
 from setuptools import setup
 
+
 def read(*names, **kwargs):
     return io.open(
         join(dirname(__file__), *names),
@@ -23,14 +24,14 @@ def read(*names, **kwargs):
 
 
 setup(
-    name='picard_wrap',
-    version='0.0.1rc3',
-    license='BSD',
+    name='pycard',
+    version='0.0.1',
+    license='MIT',
     description='Small python script to wrap picard-tools. Its meant to installed via conda.',
     long_description='%s\n%s' % (read('README.rst'), re.sub(':[a-z]+:`~?(.*?)`', r'``\1``', read('CHANGELOG.rst'))),
     author='Gus Dunn',
     author_email='gus.dunn@yale.edu',
-    url='https://github.com/xguse/picard-wrap',
+    url='https://github.com/xguse/pycard',
     packages=find_packages('src'),
     package_dir={'': 'src'},
     py_modules=[splitext(basename(path))[0] for path in glob('src/*.py')],
@@ -38,9 +39,8 @@ setup(
     zip_safe=False,
     classifiers=[
         # complete classifier list: http://pypi.python.org/pypi?%3Aaction=list_classifiers
-        'Development Status :: 5 - Production/Stable',
-        'Intended Audience :: Developers',
-        'License :: OSI Approved :: BSD License',
+        # 'Development Status :: 5 - Production/Stable',
+        # 'Intended Audience :: Developers',
         'Operating System :: Unix',
         'Operating System :: POSIX',
         'Operating System :: Microsoft :: Windows',
@@ -67,7 +67,7 @@ setup(
     },
     entry_points={
         'console_scripts': [
-            'picard = picard_wrap.main:cli',
+            'pycard = pycard.main:cli',
         ]
     },
 )

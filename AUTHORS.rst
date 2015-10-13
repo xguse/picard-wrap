@@ -2,4 +2,4 @@
 Authors
 =======
 
-* Gus Dunn - https://github.com/xguse/picard-wrap
+* Gus Dunn - https://github.com/xguse/pycard

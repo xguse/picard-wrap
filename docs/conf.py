@@ -20,7 +20,7 @@ if os.getenv('SPELLCHECK'):
 
 source_suffix = '.rst'
 master_doc = 'index'
-project = u'picard wrap'
+project = u'pycard'
 year = u'2015'
 author = u'Gus Dunn'
 copyright = '{0}, {1}'.format(year, author)

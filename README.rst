@@ -1,6 +1,6 @@
-===========
-picard wrap
-===========
+======
+pycard
+======
 
 .. list-table::
     :stub-columns: 1
@@ -13,49 +13,49 @@ picard wrap
     * - package
       - |version| |downloads|
 
-.. |docs| image:: https://readthedocs.org/projects/picard-wrap/badge/?style=flat
-    :target: https://readthedocs.org/projects/picard-wrap
+.. |docs| image:: https://readthedocs.org/projects/pycard/badge/?style=flat
+    :target: https://readthedocs.org/projects/pycard
     :alt: Documentation Status
 
-.. |travis| image:: https://img.shields.io/travis/xguse/picard-wrap/master.svg?style=flat&label=Travis
+.. |travis| image:: https://img.shields.io/travis/xguse/pycard/master.svg?style=flat&label=Travis
     :alt: Travis-CI Build Status
-    :target: https://travis-ci.org/xguse/picard-wrap
+    :target: https://travis-ci.org/xguse/pycard
 
-.. |appveyor| image:: https://img.shields.io/appveyor/ci/xguse/picard-wrap/master.svg?style=flat&label=AppVeyor
+.. |appveyor| image:: https://img.shields.io/appveyor/ci/xguse/pycard/master.svg?style=flat&label=AppVeyor
     :alt: AppVeyor Build Status
-    :target: https://ci.appveyor.com/project/xguse/picard-wrap
+    :target: https://ci.appveyor.com/project/xguse/pycard
 
 
-.. |codecov| image:: https://img.shields.io/codecov/c/github/xguse/picard-wrap/master.svg?style=flat&label=Codecov
+.. |codecov| image:: https://img.shields.io/codecov/c/github/xguse/pycard/master.svg?style=flat&label=Codecov
     :alt: Coverage Status
-    :target: https://codecov.io/github/xguse/picard-wrap
+    :target: https://codecov.io/github/xguse/pycard
 
 
 
 
 .. |version| image:: https://img.shields.io/pypi/v/picard_wrap.svg?style=flat
     :alt: PyPI Package latest release
-    :target: https://pypi.python.org/pypi/picard_wrap
+    :target: https://pypi.python.org/pypi/pycard
 
 .. |downloads| image:: https://img.shields.io/pypi/dm/picard_wrap.svg?style=flat
     :alt: PyPI Package monthly downloads
-    :target: https://pypi.python.org/pypi/picard_wrap
+    :target: https://pypi.python.org/pypi/pycard
 
-Small python script to wrap picard-tools. Its meant to installed via conda.
+Small python script to wrap picard-tools.
 
-* Free software: BSD license
+* Free software: MIT license
 
 Installation
 ============
 
 ::
 
-    pip install picard_wrap
+    pip install pycard
 
 Documentation
 =============
 
-https://picard-wrap.readthedocs.org/
+https://pycard.readthedocs.org/
 
 Development
 ===========

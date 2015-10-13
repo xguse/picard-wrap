@@ -1,0 +1,5 @@
+pycard
+======
+
+.. automodule:: pycard
+    :members:

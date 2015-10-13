@@ -149,38 +149,36 @@ def cli(ctx, use_path):
     ctx.obj["CONDA_ENV_PATH"] = os.environ["CONDA_ENV_PATH"]
 
 
-@cli.command(short_help='runs picard', add_help_option=False)
+@cli.command(short_help='runs picard')
 @click.option('--jvm-args',
               default=u"'-Xmx2g'",
               show_default=True,
               help='a quoted string that contains the args you wish to pass to the java virtual machine.')
-@click.option('--help', '-h', 'h_flag',
-              is_flag=True)
 @click.argument('picard-arg', nargs=-1)
 @click.pass_context
-def do(ctx, jvm_args, h_flag, picard_arg):
-    """\b
-    picard do PicardCommandName OPTION1=value1 OPTION2=value2...
-    picard do --jvm-args '-Xmx6g' PicardCommandName OPTION1=value1 OPTION2=value2...
-    picard do PicardCommandName OPTION1=value1 OPTION2=value2... --jvm-args '-Xmx6g'
-
-
+def do(ctx, jvm_args, picard_arg):
+    """
     This command actually calls picard.
-
-    The help text for picard can be accessed by providing zero PICARD_ARGs or "--help".
 
     \b
     PICARD_ARG\t\tThese will be passed directly to picard.
 
+    \b
+    The help text for picard can be accessed by providing zero PICARD_ARGs.
+
+    \b
+    \b
+    Example usages:
+    \b
+    \tpicard do PicardCommandName OPTION1=value1 OPTION2=value2...
+    \tpicard do --jvm-args '-Xmx6g' PicardCommandName OPTION1=value1 OPTION2=value2...
+    \tpicard do PicardCommandName OPTION1=value1 OPTION2=value2... --jvm-args '-Xmx6g'
     """
     picard_arg = " ".join(picard_arg)
-    if h_flag:
-        echo_picard_help(ctx)
 
-    else:
-        call_picard(picard_path=ctx.obj['PICARD'],
-                    jvm_arg_str=jvm_args,
-                    picard_arg_str=picard_arg)
+    call_picard(picard_path=ctx.obj['PICARD'],
+                jvm_arg_str=jvm_args,
+                picard_arg_str=picard_arg)
 
 
 @cli.command(name='help', short_help='shows the picard.jar help text')

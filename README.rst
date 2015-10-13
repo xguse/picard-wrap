@@ -31,16 +31,6 @@ pycard
     :target: https://codecov.io/github/xguse/pycard
 
 
-
-
-.. |version| image:: https://img.shields.io/pypi/v/pycard.svg?style=flat
-    :alt: PyPI Package latest release
-    :target: https://pypi.python.org/pypi/pycard
-
-.. |downloads| image:: https://img.shields.io/pypi/dm/pycard.svg?style=flat
-    :alt: PyPI Package monthly downloads
-    :target: https://pypi.python.org/pypi/pycard
-
 This script facilitates calling `/path/to/picard.jar`. Its purpose is to allow you to call picard without providing
 or even knowing the full path to the executable far file.
 

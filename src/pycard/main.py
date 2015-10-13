@@ -139,7 +139,7 @@ def cli(ctx, use_path):
     """
     This script facilitates calling `/path/to/picard.jar`.
 
-    Its purpose is to allow you to call picard without providing or even knowing the pull path to the executable far
+    Its purpose is to allow you to call picard without providing or even knowing the full path to the executable far
     file.
 
     """

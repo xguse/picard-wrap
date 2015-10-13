@@ -1,7 +1,5 @@
-# !/usr/bin/env python
+#!/usr/bin/env python
 
-
-import sys
 import os
 import subprocess
 
@@ -111,7 +109,20 @@ def echo_picard_help(ctx):
 
 def get_picard_path(path=None):
     if path is None:
-        picard_path = "{conda_env}/picard/picard.jar".format(conda_env=os.environ['CONDA_ENV_PATH'])
+        try:
+            picard_path = "{conda_env}/picard/picard.jar".format(conda_env=os.environ['CONDA_ENV_PATH'])
+
+        except KeyError:
+            try:
+                picard_path = os.environ['PICARD_JAR']
+
+            except KeyError:
+                pass
+
+                msg = "If neither 'CONDA_ENV_PATH' or 'PICARD_JAR' have been set as environment variables, " \
+                      "you MUST provide a value to '--use-path'."
+                raise click.BadParameter(msg)
+
         return picard_path
     else:
         return path
@@ -122,15 +133,16 @@ def get_picard_path(path=None):
               default=None,
               show_default=True,
               help='Provide a path to override the default picard.jar location.')
+@click.version_option()
 @click.pass_context
 def cli(ctx, use_path):
-    """This script facilitates calling `/path/to/picard.jar`.
+    """
+    This script facilitates calling `/path/to/picard.jar`.
 
     Its purpose is to allow you to call picard without providing or even knowing the pull path to the executable far
     file.
 
     """
-
     ctx.obj = {}
 
     ctx.obj["PICARD"] = get_picard_path(path=use_path)
@@ -180,7 +192,3 @@ def help_(ctx):
     java -jar /path/to/picard.jar
     """
     echo_picard_help(ctx)
-
-
-
-

@@ -72,9 +72,9 @@ To use pycard in a from the command line::
 
       Example usages:
 
-          picard do PicardCommandName OPTION1=value1 OPTION2=value2...
-          picard do --jvm-args '-Xmx6g' PicardCommandName OPTION1=value1 OPTION2=value2...
-          picard do PicardCommandName OPTION1=value1 OPTION2=value2... --jvm-args '-Xmx6g'
+          pycard do PicardCommandName OPTION1=value1 OPTION2=value2...
+          pycard do --jvm-args '-Xmx6g' PicardCommandName OPTION1=value1 OPTION2=value2...
+          pycard do PicardCommandName OPTION1=value1 OPTION2=value2... --jvm-args '-Xmx6g'
 
     Options:
       --jvm-args TEXT  a quoted string that contains the args you wish to pass to
@@ -88,7 +88,7 @@ Installation
 ============
 
 .. danger::
-    There is a ``PyCard`` on PyPI but that is **NOT** this package!
+    There is a ``PyCard`` on PyPI, but that is **NOT** this package!
 
     Do **NOT** simply ``pip install pycard`` or you will end up with that address card program!
 

@@ -25,7 +25,7 @@ def read(*names, **kwargs):
 
 setup(
     name='pycard',
-    version='0.0.1',
+    version='0.0.2',
     license='MIT',
     description='Small python script to wrap picard-tools. Its meant to installed via conda.',
     long_description='%s\n%s' % (read('README.rst'), re.sub(':[a-z]+:`~?(.*?)`', r'``\1``', read('CHANGELOG.rst'))),

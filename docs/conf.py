@@ -24,7 +24,7 @@ project = u'pycard'
 year = u'2015'
 author = u'Gus Dunn'
 copyright = '{0}, {1}'.format(year, author)
-version = release = u'0.0.1'
+version = release = u'0.0.2'
 # on_rtd is whether we are on readthedocs.org
 on_rtd = os.environ.get('READTHEDOCS', None) == 'True'
 
